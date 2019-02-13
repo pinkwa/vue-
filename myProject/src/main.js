@@ -23,7 +23,14 @@ Vue.use(MintUI)
 // 导入vue-resource
 import vueRseource from 'vue-resource'
 Vue.use(vueRseource)
+import moment from 'moment'
+// 定义一个全局的过滤器
+Vue.filter( 'dateFormat', function(dataStr,placced="YYYY-MM-DD HH-mm-ss"){
+    return  moment().format('YYYY-MM-DD HH-mm-ss');
+})
 
+// 挂载全局的url公共的地址
+Vue.http.options.root = 'http://www.lovegf.cn:8899/api/';
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
