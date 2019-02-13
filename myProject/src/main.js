@@ -33,6 +33,9 @@ Vue.filter( 'dateFormat', function(dataStr,placced="YYYY-MM-DD HH-mm-ss"){
 Vue.http.options.root = 'http://www.lovegf.cn:8899/api/';
 Vue.config.productionTip = false
 
+// 注册一个全局的组件
+import comment from "./components/commont.vue"
+Vue.component('comment',comment)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

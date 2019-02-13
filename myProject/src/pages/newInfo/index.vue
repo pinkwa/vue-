@@ -8,6 +8,7 @@
                 </p>
              <br>
     <div v-html="newInfo.content"></div>
+    <comment></comment>
     </div>
 </template>
 <script>
