@@ -8,7 +8,7 @@
                 </p>
              <br>
     <div v-html="newInfo.content"></div>
-    <comment></comment>
+    <comment :id="this.id"></comment>
     </div>
 </template>
 <script>
@@ -25,7 +25,7 @@ export default {
     methods: {
         getNewInfo(){
             this.$http.get('getnew/' +this.id).then(result=>{
-                console.log(result.body.message)
+                // console.log(result.body.message)
                 this.newInfo=result.body.message[0]
             })
         }
