@@ -10,6 +10,8 @@ import newsListContent from '../pages/newsList'
 import newInfoContent from '../pages/newInfo'
 import photoListContent from '../pages/photoList'
 import photoInfoContent from '../pages/photoInfo'
+import goodListContent from '../pages/goodList'
+import goodInfoContent from '../pages/goodInfo'
 
 Vue.use(Router)
 
@@ -23,7 +25,10 @@ export default new Router({
   { path: '/home/newsList', component:newsListContent },
   { path: '/home/newInfo/:id', component:newInfoContent },
   { path: '/home/photoList', component:photoListContent},
-  { path: '/home/photoInfo/:id', component:photoInfoContent}
+  { path: '/home/photoInfo/:id', component:photoInfoContent},
+  { path: '/home/goodList', component:goodListContent},
+  { path: '/home/goodInfo/:id', component:goodInfoContent}
+
     
   ],
   linkActiveClass: 'mui-active' // 类库

@@ -36,7 +36,7 @@ Vue.config.productionTip = false
 import VuePreview from 'vue-pic-preview'
 Vue.use(VuePreview)
 
-// 注册一个全局的组件
+// 注册一个全局评论的组件
 import comment from "./components/commont.vue"
 Vue.component('comment',comment)
 /* eslint-disable no-new */
