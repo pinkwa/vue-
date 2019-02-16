@@ -32,6 +32,9 @@ Vue.filter( 'dateFormat', function(dataStr,placced="YYYY-MM-DD HH-mm-ss"){
 // 挂载全局的url公共的地址
 Vue.http.options.root = 'http://www.lovegf.cn:8899/api/';
 Vue.config.productionTip = false
+// 导入缩略图
+import VuePreview from 'vue-pic-preview'
+Vue.use(VuePreview)
 
 // 注册一个全局的组件
 import comment from "./components/commont.vue"
