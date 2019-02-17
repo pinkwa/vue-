@@ -1,4 +1,4 @@
-<template>
+<template name="vue">
    <div id="app">
     <mt-header fixed title="黑马程序员项目"></mt-header>
    <transition>
@@ -15,7 +15,7 @@
       </router-link>
       <router-link class="mui-tab-item1" to="/shopcar">
         <span class="mui-icon mui-icon-extra mui-icon-extra-cart">
-          <span class="mui-badge">9</span>
+          <span class="mui-badge" id="badge">9</span>
         </span>
         <span class="mui-tab-label">购物车</span>
       </router-link>
@@ -40,18 +40,18 @@ export default {
   padding-bottom: 50px;
   
 }
- .v-enter
+ .vue-enter
  {
    opacity: 0;
    transform: translateX(100%)
  }
-.v-leave-to{
+.vue-leave-to{
     opacity: 0;
    transform: translateX(-100%);
    position: absolute;
 }
- .v-enter-active,
- .v-leave-active{
+ .vue-enter-active,
+ .vue-leave-active{
    transition: all 0.5s ease
  }
 

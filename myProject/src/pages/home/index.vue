@@ -1,10 +1,11 @@
 <template>
   <div class="home-container">
-    <mt-swipe :auto="4000">
+    <!-- <mt-swipe :auto="4000">
       <mt-swipe-item v-for="(item,index) in banners" :key="index">
         <img :src="item.img" alt>
       </mt-swipe-item>
-    </mt-swipe>
+    </mt-swipe> -->
+    <swiper :banners="banners" fullsec="true"></swiper>
 
     <ul class="mui-table-view mui-grid-view mui-grid-9">
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">

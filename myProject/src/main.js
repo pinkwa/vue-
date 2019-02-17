@@ -40,6 +40,10 @@ Vue.use(VuePreview)
 import comment from "./components/commont.vue"
 Vue.component('comment',comment)
 /* eslint-disable no-new */
+
+// 挂载一个全局swiper组件
+import swiper from './components/swiper.vue'
+Vue.component('swiper', swiper)
 new Vue({
   el: '#app',
   router,
